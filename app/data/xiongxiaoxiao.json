@@ -1,0 +1,12 @@
+{
+	"name":"熊小小",
+	"age":8,
+	"images":[
+		"./img/baby/1.jpg",
+		"./img/baby/2.jpg",
+		"./img/baby/3.jpg"
+	],
+	"tips":"我是一只熊酱油",
+	"imgHeadUrl":"./img/head/h4.jpg",
+	"badge":255
+}

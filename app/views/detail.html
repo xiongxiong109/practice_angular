@@ -1,0 +1,40 @@
+<div class="navbar navbar-default">
+	<div class="navbar-brand">宝贝详情</div>
+</div>
+<div class="container">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4>{{detailData.name}}</h4>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-3">
+					<img ng-src="{{detailData.imgHeadUrl}}" class="img-circle img-detail-head">
+				</div>
+				<div class="col-md-6">
+					<h5>年龄:{{detailData.age}}岁</h5>
+					<div class="alert alert-info">
+						参赛宣言:{{detailData.tips}}
+					</div>
+				</div>
+				<div class="col-md-1 col-md-offset-1">
+					<button class="btn btn-primary">
+						为TA点赞：<span class="badge">{{detailData.badge}}</span>
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="panel panel-default ">
+						<div class="panel-heading">
+							更多图片
+						</div>
+						<div class="panel-body" ng-repeat="img in detailData.images">
+							<img ng-src="{{img}}" class="detail-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

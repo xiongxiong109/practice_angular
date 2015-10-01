@@ -1,0 +1,44 @@
+<!-- header -->
+<div class="navbar navbar-default">
+	<div class="navbar-brand">萌宝投票</div>
+</div>
+<!-- header end -->
+<div class="container">
+	<!-- form -->
+	<div class="row">
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label for="searchValue" class="col-md-1 text-right">搜索</label>
+				<div class="col-md-4">
+					<input type="text" ng-model="searchValue" class="form-control">
+				</div>
+				<div class="col-md-4">
+					<label for="filter" class="col-md-2">排序</label>
+					<div class="col-md-5">
+						<select id="filter" 
+							ng-model="defaultSelect" 
+							ng-options="a.name for a in filterSelectorArr"
+							ng-change="changeFilter()" 
+							class="form-control">
+						</select>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- form end -->
+	<!-- list -->
+	<div class="row">
+		<ul class="list-group" id="listWaterFall">
+			<li class="list-group-item animated" ng-repeat="baby in babyListData | orderBy:filterSelect | filter:searchValue">
+				<h4>
+					<img ng-src="{{baby.imgHeadUrl}}" class="baby-head img-circle">
+					<a ng-href="#detail/{{baby.queryName}}">{{baby.name}}</a>
+					<mdall>年龄:{{baby.age}}</mdall>
+				</h4>
+				<p>参赛宣言:{{baby.tips}}</p>
+			</li>
+		</ul>
+	</div>
+	<!-- list end -->
+</div>

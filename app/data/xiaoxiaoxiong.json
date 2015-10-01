@@ -1,0 +1,11 @@
+{
+	"name":"小小熊",
+	"age":4,
+	"images":[
+		"./img/baby/3.jpg",
+		"./img/baby/4.jpg"
+	],
+	"tips":"我是一只是一酱油熊",
+	"imgHeadUrl":"./img/head/h2.jpg",
+	"badge":5
+}

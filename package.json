@@ -1,0 +1,20 @@
+{
+  "name": "phonecat_beta",
+  "version": "1.0.0",
+  "description": "a practice for angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor"
+  },
+  "keywords": [
+    "angular",
+    "phone"
+  ],
+  "author": "Bear",
+  "license": "ISC",
+  "dependencies":{
+    "grunt":"latest",
+    "grunt-contrib-uglify":"latest",
+    "grunt-contrib-concat":"latest"
+  }
+}

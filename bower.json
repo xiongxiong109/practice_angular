@@ -1,0 +1,32 @@
+{
+  "name": "phonecat_beta",
+  "version": "1.0.0",
+  "authors": [
+    "xiongjianqiao <xiongjianqiao@fangpinhui.com>"
+  ],
+  "description": "a test for angular",
+  "main": "app.js",
+  "moduleType": [],
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies":{
+    "angular":"1.4.x",
+    "angular-animate":"1.4.x",
+    "angular-route":"1.4.x",
+    "angular-resource":"1.4.x",
+    "angular-mocks":"1.4.x",
+    "jquery":"~2.1.1",
+    "bootstrap":"~3.1.1"
+  }
+}

@@ -1,0 +1,13 @@
+.animated.ng-move{
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.animated.ng-move{
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+}
+.animated.ng-move-active{
+	height: 122px;
+	opacity: 1;
+}
